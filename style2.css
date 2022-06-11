@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway' , sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*typography
+=================*/
+
+h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/*buttons*/
+
+.button {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 5px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+
+.button-accent {
+    color: #00ff6c;
+    border-color: #111;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: #00ff6c;
+    color: #232323;
+}
+
+/*header
+=================*/
+
+header {
+    position: absolute;
+    width: 100%;
+    margin: 1em;
+}
+
+
+nav ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav ul li:hover
+nav ul li:focus {
+    background: transparent;
+    color: #00ff6c;
+}
+
+
+nav a {
+    font-weight:900;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    padding: .5em;
+    color: #111;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #00ff6c;
+}
+
+/*HOME-HERO */
+
+.home-hero {
+    background-image:url(img/office3.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #fff;
+}
+
+.home-hero a {
+    display: inline-block;
+}
+
+.home-about-textbox {
+    background-color: #232323;
+    padding: 3em;
+    width: 100vw;
+    margin-left: -2.5vw;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+}
+
+.home-about-textbox h1 {
+    color: #00ff6c;
+    background: #232323;
+    padding: 0 .25em;
+}
+
+.home-about-textbox p {
+    color: #fff;
+}
+
+.index-links div h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px; 
+    margin: 0;
+}
+
+.footer {
+    background: #162c3b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li {
+    list-style: none;
+}
+.footer ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer ul li a img {
+    filter: invert(1);
+    max-width: 40px;
+}
+
+.footer p {
+    color: #fff;
+}
+
+figure {
+    margin: 0;
+    height:0 auto;
+}
+
+/* PORTFOLIO */
+
+
+.port-item {
+    margin: 0;
+    position: relative;
+
+}
+
+.port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 1.75em;
+    left: 0;
+    right: 0;
+}
+.port-item img {
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+/*   INTERESTS PAGE START   */
+
+.interest-home {
+    background-image:url(img/me.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #fff;
+}
+
+.interest-about-textbox {
+    background-color: #0000A3;
+    padding: 3em;
+    width: 100vw;
+    margin-left: -2.5vw;
+    outline: 2px solid #FFD53D;
+    outline-offset: -2.5em;
+}
+
+.interest-about-textbox h1 {
+    color: #FFD53D;
+    background: #0000A3;
+    padding: 0 .25em;
+}
+
+.interest-about-textbox p {
+    color: #fff;
+}
+
+
+/*  MEDIA BREAKPOINT  IPAD */
+
+@media (min-width: 820px) {
+
+    .button {
+        font-size: 1.15em;
+        padding: .5em 1.75em;
+    }
+
+    .logo {
+        padding: 0 100px;
+    }
+    
+    img.logo {
+        height: 3.5em;
+    }
+
+    nav {
+        padding: 0 20px;
+    }
+    
+    nav ul {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    .home-hero {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+
+    .home-hero a {
+        display: none;
+    }
+
+    .port-item {
+        width: 50%;
+        float: left;
+    }
+
+    .interest-home {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+/*  MEDIA BREAKPOINT DESKTOP*/
+
+@media (min-width: 1230px) {
+    .button {
+        font-size: 2em;
+        padding: .5em 1.75em;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    p {
+        font-size: 3em;
+        line-height: 1.25em;
+    }
+    
+    .logo {
+        float: left;
+    }
+
+    img.logo {
+        height: 6em;
+    }
+
+    nav {
+        float: right;
+        padding: 0 20px;    
+    }
+
+    nav ul {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        font-size: 2.5em;
+    }
+
+    .home-hero {
+        height: 81.5vh;
+        padding-top: 35vh;
+    }
+
+    .home-hero a {
+        display: none;
+    }
+
+    .port-item {
+        width: 25%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .interest-home {
+        height: 81.5vh;
+        padding-top: 35vh;
+    }
+
+}
+
