@@ -8,7 +8,7 @@
 body {
     margin: 0;
     font-family: 'Raleway' , sans-serif;
-    
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -30,7 +30,6 @@ h1 {
     font-weight: 300;
     font-size: 2.5rem;
     margin: 0;
-    text-align: center;
 }
 
 /*buttons*/
@@ -109,6 +108,7 @@ nav a:focus {
     background-position: center;
     padding: 10em 0;
     color: #fff;
+    height: 80vh;
 }
 
 .home-hero a {
@@ -147,10 +147,11 @@ nav a:focus {
 
 .footer {
     background: #162c3b;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width:100vw;
+    margin: 0 auto;
 }
 
 .footer ul {
@@ -281,7 +282,6 @@ figure {
 
 .interest-about-textbox p {
     color: #fff;
-    text-align: center;
 }
 
 /*   PROFESSIONAL  */
@@ -339,50 +339,24 @@ figure {
 }
 
 .contact-textbox p {
-    font-size: 1.5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
     color: #fff;
-    padding-bottom: .2em;
     background-color:#0000A3;
     margin: 0;
-    padding-right: 0;
+    height: 43vh;
 }
 
-.about {
-    display:flex;
-    flex-direction: row;
-    position: relative;
-    width: 100%;
-    display:flex;
-}
-
-.about-p {
-    text-align: center;
-    padding:1em ;
-}
-
-.about .contentBx {
-    background:  #162c3b;
-    padding: 100px;
-    width: 50%;
-}
-
-.imgBx2 {
-    background-image: url(img/me.png);
-    display:flex;
-    flex-direction: column;
-    background-size: cover;
-    background-position: center;
-    width: 50vw;
-    padding: 1em;
-}
 .redbg {
-    background: url(img/red.jpg) !important;
+    background: url(img/red.jpg);
     background-size: cover;
     background-position: center;
-    width: 50vw;
+    width: 100%;
 }
 .form .inputBx {
-    margin-bottom: 40px;
+    margin:0;
 }
 .form .inputBx input {
     width: 100%;
@@ -391,7 +365,7 @@ figure {
     border: none;
     outline: none;
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: 300;
     color: #fff;
     border-bottom: 2px solid;
@@ -406,7 +380,7 @@ figure {
     border: none;
     outline: none;
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 2em;
     font-weight: 300;
     color: #fff;
     min-height: 150px;
@@ -421,6 +395,10 @@ figure {
     color: #111;
     cursor: pointer;
     font-weight: 400;
+}
+
+.form .inputBx input:hover {
+    background: #00ff6c;
 }
 
 
@@ -451,11 +429,11 @@ figure {
         padding: 0 10px;
     }
     nav ul li a {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .home-hero {
-        height: 100vh;
+        height: 70vh;
         padding-top: 35vh;
     }
 
@@ -468,13 +446,29 @@ figure {
         float: left;
     }
 
-    footer {
+    .footer {
         width: 100%;
     }
 
     .interest-home {
         height: 78vh;
         padding-top: 35vh;
+    }
+
+    .interest-about-textbox {
+        padding: 4em;
+        width: 100vw;
+        margin-left: -2.5vw;
+        outline: 2px solid #FFD53D;
+        outline-offset: -2.5em;
+    }
+    
+    .interest-about-textbox h1 {
+        font-size: 3em;
+    }
+    
+    .interest-about-textbox p {
+        font-size: 2em;
     }
     
     .blog-textbox p {
@@ -491,6 +485,31 @@ figure {
         align-content: center;
     }
 
+    .contact-textbox h1 {
+        font-size: 1.75em;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: .5em;
+        background-color: #fff;
+        width: 100%;
+        color: #111;
+        border-bottom: #111 1em solid;
+    }
+    
+    .contact-textbox h3 {
+        background: #7F8FA3;
+        margin: 0;
+    }
+
+    .contact-textbox p {
+        font-size: 3em;
+        height: 47vh;
+        padding: 1em 2em 2em 1em;
+    }
+
+    .portfolio {
+        display: none;
+    }
 
 }
 /*  MEDIA BREAKPOINT DESKTOP*/
@@ -533,8 +552,30 @@ figure {
     }
 
     .home-hero {
-        height: 81.5vh;
+        height: 40vh;
         padding-top: 35vh;
+    }
+
+    .home-about-textbox {
+        background-color: #232323;
+        padding: 3em;
+        width: 100vw;
+        margin-left: -2.5vw;
+        outline: 2px solid #00ff6c;
+        outline-offset: -2.5em;
+        height: 35vh;
+    }
+    
+    .home-about-textbox h1 {
+        font-size: 4em;
+        padding: 0 .25em;
+    }
+    
+    .home-about-textbox p {
+        font-size: 2em;
+        padding-top: 1em;
+        margin: 0;
+        color: #fff;
     }
 
     .home-hero a {
@@ -545,8 +586,9 @@ figure {
         width: 25%;
     }
 
-    footer {
+    .footer {
         width: 100%;
+        height: 16vh;
     }
 
     .interest-home {
@@ -579,6 +621,10 @@ figure {
         height: 100vh;
         padding-top: 35vh;
         
+    }
+
+    .contact-textbox p {
+        padding: 2em 2em 2em 1em;
     }
 }
 
