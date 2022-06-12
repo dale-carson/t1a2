@@ -8,7 +8,9 @@
 body {
     margin: 0;
     font-family: 'Raleway' , sans-serif;
-    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -28,6 +30,7 @@ h1 {
     font-weight: 300;
     font-size: 2.5rem;
     margin: 0;
+    text-align: center;
 }
 
 /*buttons*/
@@ -96,6 +99,7 @@ nav a:hover,
 nav a:focus {
     color: #00ff6c;
 }
+
 
 /*HOME-HERO */
 
@@ -199,10 +203,61 @@ figure {
     
 }
 
+/*  BLOGS PAGE START  */
+
+.blog-home {
+    background-image:url(img/blog-title.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 7em 0;
+    color: #fff;
+}
+
+.blog1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #111;
+}
+
+.blog-textbox {
+    background-color: #111;
+    width: 95vw;
+}
+
+
+.blog-item1 img {
+    width: 75vw;
+    height: 35vh;
+}
+
+.blog-textbox h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: .5em;
+    background-color: #111;
+    width: 100%;
+    color: #fff;
+}
+
+.blog-textbox h3 {
+    background: #7F8FA3;
+    margin: 0;
+}
+
+.blog-textbox p {
+    font-size: 1.2em;
+    color: #fff;
+    padding-bottom: .2em;
+    background-color:#111;
+    margin: 0;
+}
+
 /*   INTERESTS PAGE START   */
 
 .interest-home {
-    background-image:url(img/me.png);
+    background-image:url(img/office2.png);
     background-size: cover;
     background-position: center;
     padding: 10em 0;
@@ -226,7 +281,148 @@ figure {
 
 .interest-about-textbox p {
     color: #fff;
+    text-align: center;
 }
+
+/*   PROFESSIONAL  */
+
+.professional-home {
+    background-image:url(img/manufacturing2.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 7em 0;
+    color: #fff;
+}
+
+/*  CONTACT ME PAGE  */
+
+.contact-home {
+    background-image:url(img/contact-title.jpeg.crdownload);
+    background-size: cover;
+    background-position: center;
+    padding: 7em 0;
+    color: #fff;
+}
+
+.contact1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.contact-textbox {
+    background-color: #fff;
+    width: 100vw;
+}
+
+
+.contact-item1 img {
+    width: 75vw;
+    height: 35vh;
+}
+
+.contact-textbox h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: .5em;
+    background-color: #fff;
+    width: 100%;
+    color: #111;
+    border-bottom: #111 1em solid;
+}
+
+.contact-textbox h3 {
+    background: #7F8FA3;
+    margin: 0;
+}
+
+.contact-textbox p {
+    font-size: 1.5em;
+    color: #fff;
+    padding-bottom: .2em;
+    background-color:#0000A3;
+    margin: 0;
+    padding-right: 0;
+}
+
+.about {
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    display:flex;
+}
+
+.about-p {
+    text-align: center;
+    padding:1em ;
+}
+
+.about .contentBx {
+    background:  #162c3b;
+    padding: 100px;
+    width: 50%;
+}
+
+.imgBx2 {
+    background-image: url(img/me.png);
+    display:flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+    padding: 1em;
+}
+.redbg {
+    background: url(img/red.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+}
+.form .inputBx {
+    margin-bottom: 40px;
+}
+.form .inputBx input {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid;
+}
+.form .inputBx::placeholder {
+    color: #fff;
+}
+.form .inputBx textarea {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    min-height: 150px;
+    border-bottom: 2px solid;
+}
+.form .inputBx textarea::placeholder {
+    color: #fff;
+}
+.form .inputBx input[type="submit"] {
+    width: 150px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+}
+
 
 
 /*  MEDIA BREAKPOINT  IPAD */
@@ -239,7 +435,7 @@ figure {
     }
 
     .logo {
-        padding: 0 100px;
+        padding: 0 50px;
     }
     
     img.logo {
@@ -255,7 +451,7 @@ figure {
         padding: 0 10px;
     }
     nav ul li a {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .home-hero {
@@ -272,16 +468,36 @@ figure {
         float: left;
     }
 
+    footer {
+        width: 100%;
+    }
+
     .interest-home {
-        height: 100vh;
+        height: 78vh;
         padding-top: 35vh;
     }
+    
+    .blog-textbox p {
+        font-size: 1.5em;
+        padding-bottom: .2em;
+    }
+
+    .blog-textbox h3 {
+        font-size: 2em;
+        background: #7F8FA3;
+        color: #fff;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+
 }
 /*  MEDIA BREAKPOINT DESKTOP*/
 
-@media (min-width: 1230px) {
+@media (min-width: 1400px) {
     .button {
-        font-size: 2em;
+        font-size: 1.2em;
         padding: .5em 1.75em;
     }
 
@@ -299,7 +515,8 @@ figure {
     }
 
     img.logo {
-        height: 6em;
+        height: 4em;
+        padding-top: .7em;
     }
 
     nav {
@@ -312,7 +529,7 @@ figure {
     }
 
     nav ul li a {
-        font-size: 2.5em;
+        font-size: 1.6em;
     }
 
     .home-hero {
@@ -333,9 +550,59 @@ figure {
     }
 
     .interest-home {
-        height: 81.5vh;
+        height: 100vh;
         padding-top: 35vh;
     }
 
+    .blog-textbox p {
+        font-size: 3em;
+        padding-bottom: .2em;
+    }
+
+    .blog-textbox h1 {
+        font-size: 4em;
+        font-weight: 550;
+        text-transform: uppercase;
+        padding-top: .5em;
+    }
+
+    .blog-textbox h3 {
+        font-size: 2em;
+        background: #7F8FA3;
+        padding:.5em 0;
+        display:flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .professional-home {
+        height: 100vh;
+        padding-top: 35vh;
+        
+    }
 }
 
+/*  MEDIA BREAKPOINT WIDE SCREEN*/
+
+@media (min-width: 1800px) {
+    img.logo {
+        height: 8em;
+        padding-top: .7em;
+    }
+
+    nav ul li a {
+        font-size: 4em;
+    }
+
+    .blog-item1 img {
+        width: 40vw;
+        height: 50vh;
+    }
+
+    .button {
+        font-size: 2em;
+        padding: 1em 2em;
+        
+    }
+
+}
