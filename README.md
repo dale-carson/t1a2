@@ -1,7 +1,10 @@
 # t1a2
 
+# link to my website portfolio
+https://dale-carson.github.io/t1a2/
+
 # link to my github
-https://github.com/dale-carson/t1a2
+[https://github.com/dale-carson
 
 # About Website
 The purpose of this website is to showcase the things i have learnt so far in the course. I started by making it mobile friendly first and then added in media breakpoints.
@@ -17,3 +20,6 @@ I also made an extra media break point as it looked bad on my wide screen monito
 
 # Target Audience
 My target audience is future employers and for my peers.
+
+# Tech stack
+In this portfolio i used html 5, css, github, balsamqic wireframes and canva.com to make logo's
